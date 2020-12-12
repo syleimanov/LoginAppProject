@@ -42,7 +42,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOE-g8-5wC">
-                                <rect key="frame" x="195" y="504" width="101" height="44"/>
+                                <rect key="frame" x="163" y="439" width="102" height="44"/>
                                 <color key="backgroundColor" red="0.61356460492227982" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BOE-g8-5wC" secondAttribute="height" multiplier="73:32" id="OMC-Tf-WBW"/>
@@ -117,14 +117,14 @@
                     <connections>
                         <outlet property="loginWindow" destination="HvX-gk-g5Q" id="e5P-sa-Tzd"/>
                         <outlet property="passwordWindow" destination="wDO-hE-eqh" id="3wb-9u-Zoo"/>
-                        <segue destination="SgB-PC-aI3" kind="presentation" identifier="logIn" id="IZ0-fF-CMU"/>
+                        <segue destination="LD1-Gw-wYi" kind="presentation" identifier="logIn" id="IZ0-fF-CMU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="276" y="85.007496251874073"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--LOG OUT-->
         <scene sceneID="9m0-Ij-fmL">
             <objects>
                 <viewController id="SgB-PC-aI3" customClass="WelcomeViewController" customModule="LoginAppProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -175,6 +175,7 @@ fucked up :)</string>
                             <constraint firstItem="Ixm-bU-a1q" firstAttribute="centerY" secondItem="4FN-0O-GJv" secondAttribute="centerY" id="zfe-W0-6vU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="LOG OUT" id="dEl-vn-GRN"/>
                     <navigationItem key="navigationItem" id="Wig-Nq-FKD"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="nhe-kg-cQN" id="oLu-K1-7bh"/>
@@ -183,7 +184,56 @@ fucked up :)</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tjp-4X-uTj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="WWq-zd-qf3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="85.907046476761622"/>
+            <point key="canvasLocation" x="2288" y="-255"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QTc-tq-iRs">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LD1-Gw-wYi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C5Y-oi-8f0">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SgB-PC-aI3" kind="relationship" relationship="viewControllers" id="7Ve-dB-avB"/>
+                        <segue destination="26V-IZ-GLz" kind="relationship" relationship="viewControllers" id="iXn-g1-V4x"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRS-tJ-AOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1427.1028037383176" y="85.529157667386613"/>
+        </scene>
+        <!--Я УСТАЛЬ-->
+        <scene sceneID="2sL-wY-NJ5">
+            <objects>
+                <viewController id="26V-IZ-GLz" customClass="ThirdPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jxl-KM-mCa">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11P-nI-JBk">
+                                <rect key="frame" x="53.333333333333343" y="400.33333333333331" width="321.66666666666663" height="71.666666666666686"/>
+                                <string key="text">Второй день не сплю, 
+я усталь!</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.6426692034" green="0.0062215386540000004" blue="0.0090436641590000005" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rss-tT-ukQ"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="11P-nI-JBk" firstAttribute="centerX" secondItem="Jxl-KM-mCa" secondAttribute="centerX" id="K2a-R6-u90"/>
+                            <constraint firstItem="11P-nI-JBk" firstAttribute="centerY" secondItem="Jxl-KM-mCa" secondAttribute="centerY" id="kK3-Mq-aJm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Я УСТАЛЬ" id="eIp-lV-LDB">
+                        <color key="badgeColor" red="0.6426692034" green="0.0062215386540000004" blue="0.0090436641590000005" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYT-gV-n1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297.663551401869" y="454.85961123110155"/>
         </scene>
     </scenes>
     <resources>

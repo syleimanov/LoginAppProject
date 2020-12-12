@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "logIn" else { return }
-        let welcomeVC = segue.destination as! WelcomeViewController
-        welcomeVC.userName = loginWindow.text
+//        let welcomeVC = segue.destination as! UITabBarController
+//        welcomeVC.userName = loginWindow.text
     }
     
     @IBAction func logInPressed() {

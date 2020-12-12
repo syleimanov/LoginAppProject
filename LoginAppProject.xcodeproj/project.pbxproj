@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		841714E12585313D00C2299C /* hedaSmioke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841714E02585313D00C2299C /* hedaSmioke.jpg */; };
+		841714EC258549E800C2299C /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841714EB258549E800C2299C /* ThirdPageViewController.swift */; };
+		841714EF25854C1400C2299C /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841714EE25854C1400C2299C /* UITabBarController.swift */; };
 		843EB95B2584B9D200F6C339 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EB95A2584B9D200F6C339 /* WelcomeViewController.swift */; };
 		844B2A172585268900E01017 /* failed_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 844B2A162585268900E01017 /* failed_logo.jpg */; };
 		844B2A1B258526A000E01017 /* shadow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 844B2A1A258526A000E01017 /* shadow.jpg */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		841714E02585313D00C2299C /* hedaSmioke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hedaSmioke.jpg; path = Assets.xcassets/hedaSmioke.jpg; sourceTree = "<group>"; };
+		841714EB258549E800C2299C /* ThirdPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
+		841714EE25854C1400C2299C /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		843EB95A2584B9D200F6C339 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		844B2A162585268900E01017 /* failed_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = failed_logo.jpg; path = Assets.xcassets/failed_logo.jpg; sourceTree = "<group>"; };
 		844B2A1A258526A000E01017 /* shadow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shadow.jpg; path = Assets.xcassets/shadow.jpg; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			children = (
 				84A84ECB25836B7400D8B0EA /* View Controller.swift */,
 				843EB95A2584B9D200F6C339 /* WelcomeViewController.swift */,
+				841714EB258549E800C2299C /* ThirdPageViewController.swift */,
+				841714EE25854C1400C2299C /* UITabBarController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -161,6 +167,9 @@
 		84A84EBC25836B7400D8B0EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1st_screen,
+				);
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
@@ -208,9 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A84ECC25836B7400D8B0EA /* View Controller.swift in Sources */,
+				841714EF25854C1400C2299C /* UITabBarController.swift in Sources */,
 				843EB95B2584B9D200F6C339 /* WelcomeViewController.swift in Sources */,
 				84A84EC825836B7400D8B0EA /* AppDelegate.swift in Sources */,
 				84A84ECA25836B7400D8B0EA /* SceneDelegate.swift in Sources */,
+				841714EC258549E800C2299C /* ThirdPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
