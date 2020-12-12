@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var loginWindow: UITextField!
     @IBOutlet var passwordWindow: UITextField!
-    
+       
     private let userName = "User"
     private let password = "Password"
     
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         
         performSegue(withIdentifier: "logIn", sender: nil)
     }
+    
     
     @IBAction func forgotUserNamePressed() {
         showAlert(title: "Oh no, you stupid asshole!",
@@ -57,6 +58,7 @@ extension ViewController {
         }
         alert.addAction(okAction)
         present(alert, animated: true)
+
     }
 }
 
