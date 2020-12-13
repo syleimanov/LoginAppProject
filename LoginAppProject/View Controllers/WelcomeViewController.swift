@@ -9,17 +9,10 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
-    // MARK: - IB Outlets
     @IBOutlet var welcomeLabel: UILabel!
-
-    // MARK: - Public properties
     var userName: String!
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }
-
-
